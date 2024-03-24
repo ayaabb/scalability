@@ -7,15 +7,17 @@ from results_operations.write_results_to_file import write_results
 
 def main():
     # fibonacci
-    # nums, fib_results_slow, fib_results_fast = calculate_fibo_results()
-    # draw_results(nums, fib_results_slow, fib_results_fast, 'fibonacci')
-    # values_info = "n     ,   slow solution Time (s)  ,   fast solution Time (s) "
-    # write_results("results_files/fibonacci_problem.txt", [nums, fib_results_slow, fib_results_fast], values_info)
+    nums, fib_results_slow, fib_results_fast = calculate_fibo_results()
+    draw_results(nums, fib_results_slow, fib_results_fast, 'fibonacci')
+    values_info = "n     ,   slow solution Time (s)  ,   fast solution Time (s) "
+    write_results("results_files/fibonacci_problem.txt", [nums, fib_results_slow, fib_results_fast], values_info)
+
     # search
     sizes, slow_results, fast_results = calculate_search_results()
     draw_results(sizes, slow_results, fast_results, "search")
     values_info = "array size ,   slow solution Time (s)  ,   fast solution Time (s) "
     write_results("results_files/search_problem.txt", [sizes, slow_results, fast_results], values_info)
+
     # count occurrences
     sizes, slow_results, fast_results = calculate_word_occurences_results()
     draw_results(sizes, slow_results, fast_results, "count occurrences")
