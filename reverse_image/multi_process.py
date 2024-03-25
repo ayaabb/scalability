@@ -4,7 +4,7 @@ from concurrent.futures import ProcessPoolExecutor
 
 
 def process_row(row):
-    # reverse a row
+    #reverse a row
     return np.array([reverse_pixel(pixel) for pixel in row])
 
 
