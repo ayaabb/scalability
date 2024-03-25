@@ -1,2 +1,2 @@
-Single process reverse image run time = 174.27
-Multi process reverse image run time = 35.38
+Single process reverse image run time = 161.51
+Multi process reverse image run time = 21.94
