@@ -1,8 +1,8 @@
-the execution time of 'register' function  before improving = 6.18
-the execution time of 'follow' function  before improving = 1.97
+the execution time of 'register' function  before improving = 7.02
+the execution time of 'follow' function  before improving = 1.98
 the execution time of 'post message' function  before improving = 0.01
-the execution time of 'generate timeline' function  before improving = 26.85
-the execution time of 'register' function  after improving = 0.02
+the execution time of 'generate timeline' function  before improving = 29.94
+the execution time of 'register' function  after improving = 0.03
 the execution time of 'follow' function  after improving = 0.01
 the execution time of 'post message' function  after improving = 0.01
-the execution time of 'generate timeline' function  after improving = 0.01
+the execution time of 'generate timeline' function  after improving = 0.02
