@@ -1,13 +1,20 @@
-from user import User, posts
+from classes.user import User, posts
 
 
-class SocialMediaPlatformImproved:
+class SocialMediaPlatform:
     def __init__(self):
-        self.users = {}
+        self.users = []
 
     def register_user(self, username):  # o(n)
-        if self.users.get(username) is None:
-            self.users[username] = User(username)
+        if not self._is_username_taken(username):
+            user = User(username)
+            self.users.append(user)
+
+    def _is_username_taken(self, username):  # o(n)
+        for user in self.users:
+            if user.username == username:
+                return True
+        return False
 
     def get_user_by_username(self, username):  # o(n)
         for user in self.users:
