@@ -1,5 +1,7 @@
 def run_register_follow(n, func_, info):
-    for i in range(n):
+    if func_.__name__ == 'register_user':
+        func_(info + '0')
+    for i in range(1, n):
         func_(info + str(i))
 
 
