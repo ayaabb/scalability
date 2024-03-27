@@ -26,8 +26,11 @@ class ImprovedSocialMediaPlatform:
             return self.users[username]
         return None
 
-    def generate_timeline(self, username):  # O(n*m) -- Where 'n' is the number of users the given user follows and 'm'
-        # is the average number of posts per followed user
+    def generate_timeline(self, username):  # O(n * m') -- Where "n" is the number of users the given user follows and
+        # "m'" is the average number of posts per followed user. Here, "m'" is less
+        # than or equal to "m" in the previous implementation because "m'" represents
+        # only the number of posts from followed users, whereas "m" represented all
+        # the posts in the platform.
         """Generates a timeline of posts from followed users for the given username.
         param: username (str): The username of the user for whom to generate the timeline.
         Returns: list: A list of posts from followed users.
