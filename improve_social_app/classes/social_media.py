@@ -46,7 +46,8 @@ class SocialMediaPlatform:
         param: username (str): The username of the user for whom to generate the timeline.
         Returns: list: A list of posts from followed users.
         """
-        # O(n^2) - Quadratic time complexity due to nested iteration over users and posts
+        # O(n*m) -  Where 'n' is the number of users the given user follows and 'm'
+        # is the number of all the posts in the platform
         user = self.get_user_by_username(username)
         if not user:
             return []
